@@ -25,7 +25,6 @@ const Homepage = () => {
           />
           <div className="flex pt-[340px] z-50">
             <p className="pr-2">Développeur </p>
-            <Typing />
           </div>
         </div>
       </div>
