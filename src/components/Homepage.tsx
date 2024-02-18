@@ -15,7 +15,7 @@ const Homepage = () => {
       ></div>
 
       <main className=" h-[calc(100vh_-_80px)] grid grid-cols-6" id="Home">
-        <div className="col-span-6 flex gap-4 sm:gap-7 flex-col justify-center items-center sm:items-start px-5 lg:pl-24 md:pl-10 pt-[130px] md:pt-0">
+        <div className="col-span-6 flex gap-4 sm:gap-7 flex-col justify-center items-center sm:items-start px-5 lg:pl-24 md:pl-10 pt-[170px] md:pt-0">
           <Chip
             color="success"
             variant="dot"
