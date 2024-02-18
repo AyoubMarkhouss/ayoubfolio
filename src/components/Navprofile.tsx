@@ -14,6 +14,7 @@ import {
 import Linkedin from "./icons/Linkedin";
 import Instagram from "./icons/Instagram";
 import Whatsapp from "./icons/Whatsapp";
+import Image from "next/image";
 
 export default function Navprofile() {
   const [navbarBlur, setNavbarBlur] = useState(false);
@@ -35,16 +36,23 @@ export default function Navprofile() {
   }, []);
   return (
     <Navbar isBlurred={false} className={navbarBlur ? "blurred" : "trans"}>
-      {/* <NavbarBrand>
-        <p className="font-bold text-inherit">ACME</p>
-      </NavbarBrand> */}
+      <NavbarBrand className="flex cursor-default">
+        <Image
+          alt="heh"
+          src="/favicon.png"
+          width={1000}
+          height={1000}
+          className="w-10 pr-1"
+        />
+        <p> AYOUB</p>
+      </NavbarBrand>
 
-      <NavbarContent className="flex gap-4" justify="start">
+      <NavbarContent className="hidden sm:flex" justify="start">
         <NavbarItem>
           <Link
             color="foreground"
             href="#"
-            className="md:text-xl text-lg hover:-translate-y-1 hover:transition ease-out hover:scale-110 hover:font-semibold"
+            className="md:text-xl text-lg hover:-translate-y-1 hover:transition ease-out hover:scale-110 hover:font-semibold md:pr-3 hover:border-b-violet-600 hover:border-b-2 hover:text-violet-500"
           >
             Home
           </Link>
@@ -54,7 +62,7 @@ export default function Navprofile() {
           <Link
             color="foreground"
             href="#"
-            className="md:text-xl text-lg hover:translate-y-1 hover:transition ease-out hover:scale-110 hover:font-semibold md:pr-3"
+            className="md:text-xl text-lg hover:translate-y-1 hover:transition ease-out hover:scale-110 hover:font-semibold md:pr-3 hover:border-b-violet-600 hover:border-b-2 hover:text-violet-500"
           >
             About
           </Link>
@@ -63,7 +71,7 @@ export default function Navprofile() {
           <Link
             color="foreground"
             href="#"
-            className="md:text-xl text-lg hover:-translate-y-1 hover:transition ease-out hover:scale-110 hover:font-semibold md:pr-3"
+            className="md:text-xl text-lg hover:-translate-y-1 hover:transition ease-out hover:scale-110 hover:font-semibold md:pr-3 hover:border-b-violet-600 hover:border-b-2 hover:text-violet-500"
           >
             Projects
           </Link>
@@ -72,7 +80,7 @@ export default function Navprofile() {
           <Link
             color="foreground"
             href="#"
-            className="md:text-xl text-lg hover:translate-y-1 hover:transition ease-out hover:scale-110 hover:font-semibold md:pr-3"
+            className="md:text-xl text-lg hover:translate-y-1 hover:transition ease-out hover:scale-110 hover:font-semibold md:pr-3 hover:border-b-violet-600 hover:border-b-2 hover:text-violet-500"
           >
             Contact
           </Link>
