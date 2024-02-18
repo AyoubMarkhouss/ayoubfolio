@@ -44,7 +44,7 @@ export default function Navprofile() {
           height={1000}
           className="w-10 pr-1"
         />
-        <p> AYOUB</p>
+        <p>AYOUBFOLIO</p>
       </NavbarBrand>
 
       <NavbarContent className="hidden sm:flex" justify="start">
